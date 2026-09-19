@@ -1,0 +1,88 @@
+{
+  "schema_version": "2.0",
+  "skill_id": "triple_slash_A",
+  "status": "design_contract_not_executed",
+  "frame_count": 16,
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "order": "row_major"
+  },
+  "output_mode": "skeleton_only",
+  "target": {
+    "screen_direction": "right",
+    "same_target": true,
+    "head_gaze": "target_biased_with_neck_feasibility",
+    "camera": "fixed"
+  },
+  "identity": {
+    "weapon": "single_handed_straight_training_sword",
+    "weapon_hand_id": "weapon_hand_A",
+    "anatomical_side": "not_yet_verified_from_reference",
+    "allow_hand_swap": false,
+    "allow_mirror": false,
+    "leg_ids": [
+      "A",
+      "B"
+    ]
+  },
+  "ground_mode": "grounded",
+  "allow_airborne": false,
+  "lead_foot_by_attack": [
+    "A",
+    "B",
+    "A"
+  ],
+  "attacks": [
+    {
+      "id": 1,
+      "screen_trajectory": "upper_left_to_lower_right",
+      "motion_intent": "advancing_diagonal_downcut",
+      "power_design_weight": 0.65,
+      "step": "push_step",
+      "advance_design_value": 0.18
+    },
+    {
+      "id": 2,
+      "screen_trajectory": "upper_right_to_lower_left",
+      "motion_intent": "counter_diagonal_downcut",
+      "power_design_weight": 0.82,
+      "transition": "passing_step_with_feasible_counter_rotation",
+      "advance_design_value": 0.18
+    },
+    {
+      "id": 3,
+      "screen_trajectory": "low_to_high",
+      "motion_intent": "grounded_rising_finisher",
+      "power_design_weight": 1.0,
+      "transition": "passing_step_and_compression",
+      "advance_design_value": 0.3,
+      "finisher": true
+    }
+  ],
+  "parameter_note": "power和advance来自此前讨论的示意值，不是实测/校准结果。身位单位过去未严格定义，实施前须选用角色标准高度H或其他明确单位。",
+  "advance_unit": "body_unit_pending_definition",
+  "root_export_mode": "local_animation_plus_explicit_world_motion_curve",
+  "production_size_px": null,
+  "pivot_px": null,
+  "frame_durations_ms": null,
+  "active_windows_ms": null,
+  "motion_blueprint": null,
+  "qa": {
+    "result_states": [
+      "PASS",
+      "FAIL",
+      "UNKNOWN"
+    ],
+    "semantic_vision_implemented": false,
+    "max_segment_retries_proposed": 2,
+    "full_sequence_regression_after_patch": true
+  },
+  "render": {
+    "skeleton_character_costume": false,
+    "fx": false,
+    "diagnostic_forward_marker": "separate_layer_if_needed",
+    "preserve_physical_bone_lengths": true,
+    "do_not_lock_projected_bbox": true
+  }
+}

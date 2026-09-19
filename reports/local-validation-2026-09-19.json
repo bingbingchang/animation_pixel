@@ -1,0 +1,28 @@
+{
+  "scope": "original_file_integrity",
+  "status": "PASS",
+  "metadata_assets": 24,
+  "verified_originals": 24,
+  "failures": [],
+  "semantic_motion_qa": "NOT_IMPLEMENTED",
+  "game_import_qa": "NOT_RUN",
+  "note": "PASS means only the stated scope passed; no head/foot/weapon/animation approval.",
+  "unit_tests": {
+    "passed": 9,
+    "failed": 0,
+    "scope": "local_archive_guardrails; no remote upload integration executed"
+  },
+  "remote_raw_originals": "NOT_UPLOADED",
+  "previews": [
+    {
+      "path": "assets/previews/generated_cases_overview.webp",
+      "bytes": 3804,
+      "sha256": "5b8de66a067fdb6e53082b4101ddbc25c88e69fe7a3dd919f641278590d9bdc5"
+    },
+    {
+      "path": "assets/previews/G15_frames09-10.webp",
+      "bytes": 6638,
+      "sha256": "7bd357116fc503f2a05e1472c49d45d49ec07267bce049977fb3d6b76777e3f8"
+    }
+  ]
+}
