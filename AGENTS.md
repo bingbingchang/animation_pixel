@@ -1,5 +1,9 @@
 # animation_pixel — Agent启动规则
 
+## 白模到角色图片路线（2026-09-21）
+
+任务涉及复用免费模型动作、白模序列或白衣长发角色时，先读 `docs/13_white_model_sprite_character_workflow.md`，从已通过的素材继续。默认是现成骨骼动作渲染 → 白模序列图 → 图像模型绘制角色 → 快速预览；只修明显问题，不自行扩展为 Wan 视频生成、完整角色建模绑定、逐帧关节追踪或精修工程。这条图片路线不套用其他实验的视频抽卡步骤。跑步允许原动作的正常腾空；下文三连斩的 grounded 约束仅针对该技能。本次更新授权的是文档归档，不代表已授权新一轮付费生成。
+
 ## 必须先读
 
 依次读取 `README.md`、`docs/03_failure_catalog.md`、`docs/02_motion_spec_v2.md`、`configs/triple_slash_v2.json`、`cases/triple_slash_001/README.md`。需要外部案例时，再读取 `docs/04_open_source_review.md`，不要一次加载整个图库。
